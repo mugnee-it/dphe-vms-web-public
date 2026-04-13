@@ -1,183 +1,261 @@
-# Visitor Management System — Jalalabad Gas Transmission & Distribution System Limited
+<div align="center">
 
-A secure, role-based visitor operations portal for reception, approving officers, and HR administration—covering intake, multi-channel notifications, gate check-in/checkout, reporting, and audit-ready activity history.
+# Visitor Management Platform
 
----
+### Built for **Jalalabad Gas Transmission & Distribution System Limited**
 
-## Overview
+*A production-style visitor operations system: reception, approvals, gate control, and audit-ready oversight—without the chaos of paper logs and scattered messages.*
 
-**Jalalabad Gas Transmission and Distribution System Limited** needed a dependable way to move beyond manual visitor logs: clear accountability, faster front-desk service, and controlled entry tied to officer approval.
+<br/>
 
-This engagement delivers a **tailored visitor management experience**—not an off-the-shelf template. Reception can register visitors efficiently; destination officials receive requests promptly; and HR administrators maintain organizational structure, run operational reports, and review system activity in one place.
+[**Discuss a similar build →**](https://mugneeit.com)
 
-The same concepts apply to other **utilities, regulated sites, and public-sector offices** that require structured visitor flow and evidence of who approved access, and when.
-
----
-
-## Key Capabilities
-
-- **Secure, role-based sign-in** — Separate workspaces for reception, officers, and administrators.
-- **Reception-led registration** — Guided intake captures identity, contact, purpose, scheduling, destination official, and guest-card linkage where required.
-- **Self-service visitor entry (QR)** — Visitors can submit requests from their own device after scanning a reception QR code—no visitor account required—while reception can still enter visits manually when preferred.
-- **Officer review & decisions** — Pending requests surface in an officer inbox; visits can be approved or rejected with notes and timing adjustments.
-- **Multi-channel awareness** — Alerts reach officials through the application together with **email and WhatsApp**, so action is less likely to be missed.
-- **Gate-ready check-in/checkout** — After approval, reception can verify the visitor and progress the visit using clear status and gate actions.
-- **HR administration** — Employees, departments, and bulk import support keep routing and ownership accurate.
-- **Reporting & export** — Filter visits by date, status, department, and host; export results for analysis and documentation (spreadsheet-friendly formats).
-- **Audit logging** — Administrative and data changes are recorded to support transparency and reviews.
+</div>
 
 ---
 
-## Industry & Use Case
+## At a glance
 
-**Primary context:** Energy and infrastructure—**gas transmission and distribution**—with the security and process discipline typical of large operational sites.
-
-**Broader fit:** Government departments, utilities, industrial campuses, and any organization that combines **public-facing reception**, **manager or officer approval**, and **audit expectations**.
-
----
-
-## How the Process Works
-
-1. **Arrival** — The visitor is registered at reception **or** submits details via **QR-based self-service**.
-2. **Routing** — The request is tied to the correct **department** and **destination official**.
-3. **Awareness** — The officer is notified through the **dashboard**, **email**, and **WhatsApp**.
-4. **Decision** — The officer **approves or rejects** the visit (with optional notes). Secure **approval links** can support decision-making without friction.
-5. **Gate control** — After approval, reception completes **check-in** using the assigned guest card flow; checkout completes the visit when the person leaves.
-6. **Oversight** — HR administrators manage **employees and departments**, run **reports**, and review **audit history** for accountability.
+| | |
+|:---|:---|
+| **Ideal for** | Utilities, regulated infrastructure, public-sector sites, and any organization where **visitor access must be explicit, approved, and traceable** |
+| **What it replaces** | Manual registers, ad-hoc calls, unclear accountability, and slow approval loops |
+| **What leadership sees** | **Faster reception**, **clear officer decisions**, **exportable history**, and **defensible records** when questions arise |
+| **How it is delivered** | **Tailored to your process**—not a forced template—with room for **ongoing support** and **full source ownership** where agreed |
 
 ---
 
-## Delivery Approach (Why This Stands Out)
+## Why this matters for your business
 
-- **Built around your workflow** — Scope and screens follow the organization’s real reception and approval process—not a generic product bolted on after the fact.
-- **No recurring subscription pitch for this class of delivery** — Structured as a **one-time solution** rather than an open-ended SaaS fee model (details agreed per engagement).
-- **Continuity** — Post-delivery support can cover changes, maintenance, and enhancements as needs evolve.
-- **Ownership** — Clients can receive **full source code** for the delivered system where that is part of the commercial agreement (the **public GitHub repo here is not a code drop**; see below).
+> **Visitors are a front-door risk and a front-desk bottleneck.** When intake, approval, and gate actions live in one coherent system, you reduce ambiguity, shorten wait times, and strengthen the story you can tell auditors and regulators.
 
----
+**Outcomes owners care about**
 
-## Technology Summary
-
-| Area | Approach |
-|------|-----------|
-| **Web experience** | Modern single-page application (**React**, **Vite**) |
-| **Interface** | Responsive, component-driven UI (**Tailwind CSS**) |
-| **Services** | **Node.js** with **Express** APIs |
-| **Data** | **PostgreSQL** for relational records and history |
-| **Quality & integrations** | Validated payloads; email and messaging integrations for notifications |
-
-*Version pins and internal modules are not published in this showcase.*
+- **Operational clarity** — One live picture of who is expected, who approved entry, and where each visit sits in the lifecycle.
+- **Faster, calmer reception** — Structured intake (including optional **QR self-service**) cuts repetition and keeps peak-hour lines manageable.
+- **Accountable approvals** — Destination officials see requests quickly—**in the app, by email, and via WhatsApp**—and can act with notes and timing that stay on record.
+- **Controlled entry** — Check-in and checkout align with approval and guest-card discipline, so “who is on site” matches policy.
+- **Governance without guesswork** — **Reports** and **audit logs** support reviews, handovers, and compliance conversations with evidence—not memory.
 
 ---
 
-## Interface Gallery
+## The experience we designed
 
-Screens below are taken from the same materials prepared for the client (proposal / solution documentation).
+**Jalalabad Gas Transmission and Distribution System Limited** needed more than digitized paperwork: a dependable way to connect **reception**, **approving officers**, and **HR administration** in a single, role-aware portal.
 
-### Sign-in
+The result is a **premium, enterprise-appropriate interface**—calm typography, decisive primary actions, and screens tuned for daily high-volume use. The same design principles translate to other **utilities, industrial campuses, and public-sector** environments where reception and security expectations run high.
 
-Secure entry for reception, officer, and admin roles.
+---
 
-![Secure login — role-based access](./screenshots/01-login-portal.png)
+## Capabilities by stakeholder
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### Reception & gate
+
+- Secure sign-in for reception roles  
+- **Today’s queue** with search and status filters  
+- **New visit** intake (identity, purpose, timing, photo, guest card / RFID context)  
+- Optional **QR-based visitor self-service**—no visitor login required  
+- **Check-in / checkout** aligned to approval and policy  
+
+</td>
+<td width="33%" valign="top">
+
+### Approving officers
+
+- **Inbox-style** pending work  
+- **Visit review** with context-rich summary  
+- Approve / reject with **notes** and **schedule adjustments**  
+- **Actionable notifications** and secure approval paths</td>
+<td width="33%" valign="top">
+
+### HR & administration
+
+- **Employees** and **departments** with practical CRUD controls  
+- **Bulk import** where high-volume HR maintenance is required  
+- **Filtered reports** and **spreadsheet-friendly export**  
+- **Audit logging** for material changes and accountability  
+
+</td>
+</tr>
+</table>
+
+---
+
+## Visitor journey (end-to-end)
+
+```mermaid
+flowchart LR
+  A[Arrival] --> B[Intake]
+  B --> C[Routing]
+  C --> D[Notify officer]
+  D --> E[Approve or reject]
+  E --> F[Gate check-in]
+  F --> G[Complete and report]
+```
+
+<details>
+<summary><strong>Step-by-step (expand)</strong></summary>
+
+1. **Arrival** — Reception registers the visitor **or** the visitor completes a **QR-led** request on their own device.  
+2. **Routing** — The visit is tied to the correct **department** and **destination official**.  
+3. **Awareness** — The officer is reached through the **dashboard**, **email**, and **WhatsApp**.  
+4. **Decision** — Approve or reject—with optional notes, reasons, and timing updates.  
+5. **Gate control** — Reception progresses **check-in** and **checkout** in line with approval and guest-card process.  
+6. **Oversight** — HR runs **reports**, maintains **structure**, and reviews **audit history** when needed.  
+
+</details>
+
+---
+
+## Delivery philosophy
+
+We do not position this as a generic SaaS checkbox exercise.
+
+| Principle | What it means for you |
+|-----------|------------------------|
+| **Workflow-first** | Screens and rules follow **how you already operate**—then we refine—not the other way around. |
+| **Commercial clarity** | This class of delivery is structured as a **one-time solution** rather than an open-ended subscription story (*terms agreed per engagement*). |
+| **Continuity** | After go-live, **support, enhancements, and maintenance** can stay with the same team that built it. |
+| **Ownership** | **Full source code** can be part of the commercial arrangement when clients want long-term control (*this public page is not a source release—see notice below*). |
+
+---
+
+## Product tour
+
+*Representative interface captures from the client proposal and solution documentation.*
+
+<br/>
+
+### Sign-in — role-based entry
+
+<p align="center">
+  <img src="./screenshots/01-login-portal.png" alt="Secure login for reception, officer, and admin" width="920" />
+</p>
+<p align="center"><em>Secure entry for reception, officer, and admin roles.</em></p>
 
 ### Reception — today’s queue
 
-Same-day visits with search, status filters, and quick access to each record.
+<p align="center">
+  <img src="./screenshots/02-today-queue-reception.png" alt="Today's visitor queue" width="920" />
+</p>
+<p align="center"><em>Same-day visibility: search, status, and fast access to each record.</em></p>
 
-![Today’s visitor queue](./screenshots/02-today-queue-reception.png)
+### Reception — new visit
 
-### Reception — new visit intake
-
-Structured capture of visitor profile, purpose, timing, photo, RFID/guest card, and destination routing.
-
-![New visit registration](./screenshots/03-new-visit-intake.png)
+<p align="center">
+  <img src="./screenshots/03-new-visit-intake.png" alt="New visit registration" width="920" />
+</p>
+<p align="center"><em>Structured intake: profile, purpose, timing, media, routing, and guest-card context.</em></p>
 
 ### Officer — visit review
 
-Review submitted details, adjust timing if needed, add notes, approve or reject.
+<p align="center">
+  <img src="./screenshots/04-officer-visit-review.png" alt="Officer visit review" width="920" />
+</p>
+<p align="center"><em>Decisions happen with full context—notes, timing, approve or reject.</em></p>
 
-![Officer visit review and decision](./screenshots/04-officer-visit-review.png)
+### Notifications that drive action
 
-### Notifications
+<p align="center">
+  <img src="./screenshots/05-approval-notification-sample.png" alt="Approval notification sample" width="920" />
+</p>
+<p align="center"><em>Officials receive concise alerts so approvals are not “lost in the inbox.”</em></p>
 
-Officials receive concise alerts with enough context to act—including paths to approve or decline securely.
+### Reception — detail & gate actions
 
-![Sample approval notification](./screenshots/05-approval-notification-sample.png)
-
-### Reception — visitor detail & gate actions
-
-Approved visits move forward with clear **check-in / check-out** guidance at the desk.
-
-![Visitor detail with check-in](./screenshots/06-visitor-detail-check-in.png)
+<p align="center">
+  <img src="./screenshots/06-visitor-detail-check-in.png" alt="Visitor detail and check-in" width="920" />
+</p>
+<p align="center"><em>Approved visits move forward with clear gate progression.</em></p>
 
 ### Administration — employees
 
-Directory maintenance with search, department scope, and safe edit/delete controls.
-
-![Employee administration](./screenshots/07-admin-employees.png)
+<p align="center">
+  <img src="./screenshots/07-admin-employees.png" alt="Employee administration" width="920" />
+</p>
+<p align="center"><em>Directory maintenance that keeps routing accurate.</em></p>
 
 ### Administration — departments
 
-Create and maintain departments that drive routing and reporting.
+<p align="center">
+  <img src="./screenshots/08-admin-departments.png" alt="Department administration" width="920" />
+</p>
+<p align="center"><em>Organizational structure that reporting and workflows depend on.</em></p>
 
-![Department administration](./screenshots/08-admin-departments.png)
+### Reports & export
 
-### Reports
+<p align="center">
+  <img src="./screenshots/09-reports-and-export.png" alt="Reports and export" width="920" />
+</p>
+<p align="center"><em>Filter, run, and export for operations reviews and documentation.</em></p>
 
-Filter by date range, status, department, and host; run the report and export for offline use.
+### Audit trail
 
-![Reports and export](./screenshots/09-reports-and-export.png)
-
-### Audit logs
-
-A chronological view of important system and data events for governance.
-
-![Audit logs](./screenshots/10-audit-logs.png)
-
----
-
-## Architecture (High Level)
-
-- **Browser application** — Role-aware navigation and forms; optimized for daily reception and officer use.
-- **API layer** — Authenticated access, authorization by role, and consistent business rules for visits and administration.
-- **Database** — Relational model for visitors, org structure, users, reporting, and audit events.
-- **Notifications** — Connectors for email and WhatsApp (and similar channels as agreed) so approvals are visible outside the browser.
-
-No implementation source, configuration secrets, or deployment artifacts appear in this repository.
+<p align="center">
+  <img src="./screenshots/10-audit-logs.png" alt="Audit logs" width="920" />
+</p>
+<p align="center"><em>Activity history that supports transparency and governance.</em></p>
 
 ---
 
-## Further Documentation
+## Solution architecture (non-technical)
 
-A **full written proposal / solution overview** for this project—including narrative, workflow detail, and the figure captions above—is available in the repository as:
+- **Web application** — A focused, role-aware portal for reception, officers, and administrators.  
+- **Application services** — Secure APIs that enforce **who can do what**, consistently.  
+- **Database** — Durable records for visits, structure, users, reporting, and audit events.  
+- **Notifications** — Connectors for **email** and **WhatsApp** (and similar channels as agreed) so decisions are not browser-bound.  
 
-`docs/Visitor Management System.docx`
+<details>
+<summary><strong>Technology reference (for IT stakeholders)</strong></summary>
 
----
+| Layer | Stack |
+|--------|--------|
+| Client | React, Vite |
+| UI | Tailwind CSS |
+| API | Node.js, Express |
+| Data | PostgreSQL |
+| Integrations | Validated payloads; messaging and email connectors |
 
-## Source Code Notice
+*Exact versions and internal modules are not disclosed in this showcase.*
 
-**The implementation source code, database definitions, environment configuration, and private deployment details are not published here.** They are withheld for **security**, **client confidentiality**, and **commercial** reasons.
-
-This repository is a **portfolio and capability showcase** only. Technical depth and references under NDA are shared directly with serious prospects.
-
----
-
-## Company
-
-**Mugnee IT Solution**  
-Website: [https://mugneeit.com](https://mugneeit.com)
-
-We design and deliver tailored software when organizations need reliability, security, and a product that matches how they actually work.
-
----
-
-## Contact
-
-If you are evaluating a **visitor management** initiative, **reception and gate workflows**, or a similar **operations portal**, we welcome a conversation.
-
-**Contact us through [mugneeit.com](https://mugneeit.com)** to discuss scope, timelines, and a delivery model that fits your stakeholders and policies.
+</details>
 
 ---
 
-*Showcase repository — illustrative screenshots and documentation only; no runnable application or proprietary credentials included.*
+## Extended documentation
+
+The full **proposal / solution narrative** (including detailed workflow copy and figure references) lives in the repository:
+
+**`docs/Visitor Management System.docx`**
+
+---
+
+## Important notice — source & confidentiality
+
+**Source code, database schemas, credentials, and deployment specifics are not published here.** They remain private for **security**, **client confidentiality**, and **commercial** reasons.
+
+This repository is a **curated portfolio exhibit** only. Deeper technical materials are shared with qualified prospects under appropriate confidentiality.
+
+---
+
+<div align="center">
+
+## Mugnee IT Solution
+
+**Custom software for teams that cannot afford fragile tools or vague vendors.**
+
+[**mugneeit.com**](https://mugneeit.com)
+
+<br/>
+
+*If you are responsible for reception, security, or HR operations and want a system that matches your standards—not a generic portal—**start a conversation on the site above**.*
+
+<br/>
+
+<sub>Showcase only: screenshots and documentation; no runnable application or secrets included.</sub>
+
+</div>
