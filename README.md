@@ -1,110 +1,165 @@
-# DPHE Visitor Management System
+# Visitor Management System — Jalalabad Gas Transmission & Distribution System Limited
 
-A secure, role-based visitor management platform that streamlines check-in, approvals, and reporting for public-sector reception and security teams.
+A secure, role-based visitor operations portal for reception, approving officers, and HR administration—covering intake, multi-channel notifications, gate check-in/checkout, reporting, and audit-ready activity history.
 
 ---
 
 ## Overview
 
-Organizations that welcome visitors need more than a paper log. This solution digitizes the full visitor lifecycle—from reception intake and officer review to management oversight and audit-ready history. It is designed for environments where accountability, speed, and clear separation of duties matter.
+**Jalalabad Gas Transmission and Distribution System Limited** needed a dependable way to move beyond manual visitor logs: clear accountability, faster front-desk service, and controlled entry tied to officer approval.
 
-The platform helps front-desk staff register visitors quickly, routes approval requests to the right officers, and gives administrators structured data for departments, staff, and compliance reporting—without relying on scattered spreadsheets or manual follow-up.
+This engagement delivers a **tailored visitor management experience**—not an off-the-shelf template. Reception can register visitors efficiently; destination officials receive requests promptly; and HR administrators maintain organizational structure, run operational reports, and review system activity in one place.
+
+The same concepts apply to other **utilities, regulated sites, and public-sector offices** that require structured visitor flow and evidence of who approved access, and when.
 
 ---
 
-## Key Features
+## Key Capabilities
 
-- **Guided visitor intake** — Reception workflows capture visit details in a consistent, efficient way.
-- **Role-based access** — Separate experiences for reception, approving officers, and administrators.
-- **Approval queue & decisions** — Officers can review pending visits and act with a clear audit trail.
-- **Today’s queue & visit detail** — Real-time visibility into who is expected, in progress, or completed.
-- **Administration** — Department and employee structure support accurate routing and reporting.
-- **Operational reports** — Summaries and exports to support management and compliance needs.
-- **Audit logging** — Key actions are recorded to support accountability and reviews.
-- **Hosted approval links** — Token-based flows allow secure decisions without unnecessary friction.
-- **Notifications** — Email and messaging channels can alert stakeholders when action is required.
+- **Secure, role-based sign-in** — Separate workspaces for reception, officers, and administrators.
+- **Reception-led registration** — Guided intake captures identity, contact, purpose, scheduling, destination official, and guest-card linkage where required.
+- **Self-service visitor entry (QR)** — Visitors can submit requests from their own device after scanning a reception QR code—no visitor account required—while reception can still enter visits manually when preferred.
+- **Officer review & decisions** — Pending requests surface in an officer inbox; visits can be approved or rejected with notes and timing adjustments.
+- **Multi-channel awareness** — Alerts reach officials through the application together with **email and WhatsApp**, so action is less likely to be missed.
+- **Gate-ready check-in/checkout** — After approval, reception can verify the visitor and progress the visit using clear status and gate actions.
+- **HR administration** — Employees, departments, and bulk import support keep routing and ownership accurate.
+- **Reporting & export** — Filter visits by date, status, department, and host; export results for analysis and documentation (spreadsheet-friendly formats).
+- **Audit logging** — Administrative and data changes are recorded to support transparency and reviews.
 
 ---
 
 ## Industry & Use Case
 
-**Industries:** Public sector, government departments, regulated facilities, and any organization with controlled entry and formal approval paths.
+**Primary context:** Energy and infrastructure—**gas transmission and distribution**—with the security and process discipline typical of large operational sites.
 
-**Typical use cases:**
-
-- Government or departmental offices with reception and security review
-- Sites that require officer or manager approval before visitor access
-- Teams that must demonstrate who approved access and when
+**Broader fit:** Government departments, utilities, industrial campuses, and any organization that combines **public-facing reception**, **manager or officer approval**, and **audit expectations**.
 
 ---
 
-## System Workflow
+## How the Process Works
 
-1. **Visitor arrives** — Reception registers the visit using the guided intake flow.
-2. **Request routed** — The system associates the visit with the right department and approval path.
-3. **Officer review** — Responsible staff see pending items in an inbox-style queue.
-4. **Decision** — Approve or decline with actions reflected immediately in the live queue.
-5. **Notifications** — Stakeholders are informed when relevant (e.g., approval needed or completed).
-6. **Oversight** — Administrators monitor structure (departments, people) and run reports.
-7. **Audit** — Important events remain available for later review and governance.
-
----
-
-## Tech Stack
-
-The production implementation combines a modern web interface with a secure API and database layer:
-
-| Layer | Technologies |
-|--------|----------------|
-| **Web application** | React, Vite |
-| **UI & styling** | Tailwind CSS |
-| **API & services** | Node.js, Express |
-| **Data** | PostgreSQL |
-| **Validation & integration** | Schema validation, HTTP client libraries, transactional email and messaging integrations |
-
-*Exact versions and internal modules are not published in this showcase.*
+1. **Arrival** — The visitor is registered at reception **or** submits details via **QR-based self-service**.
+2. **Routing** — The request is tied to the correct **department** and **destination official**.
+3. **Awareness** — The officer is notified through the **dashboard**, **email**, and **WhatsApp**.
+4. **Decision** — The officer **approves or rejects** the visit (with optional notes). Secure **approval links** can support decision-making without friction.
+5. **Gate control** — After approval, reception completes **check-in** using the assigned guest card flow; checkout completes the visit when the person leaves.
+6. **Oversight** — HR administrators manage **employees and departments**, run **reports**, and review **audit history** for accountability.
 
 ---
 
-## Screenshots
+## Delivery Approach (Why This Stands Out)
 
-Add your product images under `./screenshots/`. Suggested filenames:
+- **Built around your workflow** — Scope and screens follow the organization’s real reception and approval process—not a generic product bolted on after the fact.
+- **No recurring subscription pitch for this class of delivery** — Structured as a **one-time solution** rather than an open-ended SaaS fee model (details agreed per engagement).
+- **Continuity** — Post-delivery support can cover changes, maintenance, and enhancements as needs evolve.
+- **Ownership** — Clients can receive **full source code** for the delivered system where that is part of the commercial agreement (the **public GitHub repo here is not a code drop**; see below).
 
-| Suggested file | What to show |
-|----------------|----------------|
-| `./screenshots/01-login-portal.png` | Branded sign-in / secure entry |
-| `./screenshots/02-reception-dashboard.png` | Reception home or today’s queue overview |
-| `./screenshots/03-new-visit-intake.png` | Visitor registration or intake form |
-| `./screenshots/04-officer-inbox.png` | Pending approvals queue |
-| `./screenshots/05-visit-detail.png` | Single visit detail with status |
-| `./screenshots/06-admin-departments.png` | Department or structure management |
-| `./screenshots/07-admin-employees.png` | Employee directory or import |
-| `./screenshots/08-reports.png` | Sample operational or summary report |
-| `./screenshots/09-audit-logs.png` | Audit or activity history view |
-| `./screenshots/10-mobile-tablet.png` | Responsive layout on phone or tablet |
+---
 
-Example embed (replace with your files):
+## Technology Summary
 
-![Reception dashboard](./screenshots/02-reception-dashboard.png)
+| Area | Approach |
+|------|-----------|
+| **Web experience** | Modern single-page application (**React**, **Vite**) |
+| **Interface** | Responsive, component-driven UI (**Tailwind CSS**) |
+| **Services** | **Node.js** with **Express** APIs |
+| **Data** | **PostgreSQL** for relational records and history |
+| **Quality & integrations** | Validated payloads; email and messaging integrations for notifications |
+
+*Version pins and internal modules are not published in this showcase.*
+
+---
+
+## Interface Gallery
+
+Screens below are taken from the same materials prepared for the client (proposal / solution documentation).
+
+### Sign-in
+
+Secure entry for reception, officer, and admin roles.
+
+![Secure login — role-based access](./screenshots/01-login-portal.png)
+
+### Reception — today’s queue
+
+Same-day visits with search, status filters, and quick access to each record.
+
+![Today’s visitor queue](./screenshots/02-today-queue-reception.png)
+
+### Reception — new visit intake
+
+Structured capture of visitor profile, purpose, timing, photo, RFID/guest card, and destination routing.
+
+![New visit registration](./screenshots/03-new-visit-intake.png)
+
+### Officer — visit review
+
+Review submitted details, adjust timing if needed, add notes, approve or reject.
+
+![Officer visit review and decision](./screenshots/04-officer-visit-review.png)
+
+### Notifications
+
+Officials receive concise alerts with enough context to act—including paths to approve or decline securely.
+
+![Sample approval notification](./screenshots/05-approval-notification-sample.png)
+
+### Reception — visitor detail & gate actions
+
+Approved visits move forward with clear **check-in / check-out** guidance at the desk.
+
+![Visitor detail with check-in](./screenshots/06-visitor-detail-check-in.png)
+
+### Administration — employees
+
+Directory maintenance with search, department scope, and safe edit/delete controls.
+
+![Employee administration](./screenshots/07-admin-employees.png)
+
+### Administration — departments
+
+Create and maintain departments that drive routing and reporting.
+
+![Department administration](./screenshots/08-admin-departments.png)
+
+### Reports
+
+Filter by date range, status, department, and host; run the report and export for offline use.
+
+![Reports and export](./screenshots/09-reports-and-export.png)
+
+### Audit logs
+
+A chronological view of important system and data events for governance.
+
+![Audit logs](./screenshots/10-audit-logs.png)
 
 ---
 
 ## Architecture (High Level)
 
-- **Client application** — A single-page web experience used by reception, officers, and admins, with routing and role-aware screens.
-- **Application server** — REST-style APIs enforce authentication, authorization, and business rules.
-- **Database** — Relational storage for visits, organizational data, users/roles, and audit events.
-- **Integrations** — Outbound notifications and optional messaging channels connect the system to email and mobile-friendly workflows.
+- **Browser application** — Role-aware navigation and forms; optimized for daily reception and officer use.
+- **API layer** — Authenticated access, authorization by role, and consistent business rules for visits and administration.
+- **Database** — Relational model for visitors, org structure, users, reporting, and audit events.
+- **Notifications** — Connectors for email and WhatsApp (and similar channels as agreed) so approvals are visible outside the browser.
 
-No implementation code, configuration, or deployment details are included in this repository.
+No implementation source, configuration secrets, or deployment artifacts appear in this repository.
+
+---
+
+## Further Documentation
+
+A **full written proposal / solution overview** for this project—including narrative, workflow detail, and the figure captions above—is available in the repository as:
+
+`docs/Visitor Management System.docx`
 
 ---
 
 ## Source Code Notice
 
-**The full source code, database schemas, deployment configuration, and internal documentation are not public.** They remain private to protect security, client confidentiality, and intellectual property.
+**The implementation source code, database definitions, environment configuration, and private deployment details are not published here.** They are withheld for **security**, **client confidentiality**, and **commercial** reasons.
 
-This repository exists **only** as a **portfolio and capability showcase** for prospective clients and partners.
+This repository is a **portfolio and capability showcase** only. Technical depth and references under NDA are shared directly with serious prospects.
 
 ---
 
@@ -113,16 +168,16 @@ This repository exists **only** as a **portfolio and capability showcase** for p
 **Mugnee IT Solution**  
 Website: [https://mugneeit.com](https://mugneeit.com)
 
-We design and deliver tailored software for organizations that need reliable, secure, and maintainable systems—not generic templates.
+We design and deliver tailored software when organizations need reliability, security, and a product that matches how they actually work.
 
 ---
 
 ## Contact
 
-If you are planning a **visitor management**, **reception and security workflow**, or similar **operational platform**, we would welcome a conversation.
+If you are evaluating a **visitor management** initiative, **reception and gate workflows**, or a similar **operations portal**, we welcome a conversation.
 
-**Reach out through [mugneeit.com](https://mugneeit.com)** to discuss requirements, timelines, and how we can build a solution aligned with your policies and stakeholders.
+**Contact us through [mugneeit.com](https://mugneeit.com)** to discuss scope, timelines, and a delivery model that fits your stakeholders and policies.
 
 ---
 
-*Showcase repository — no runnable application or proprietary assets included.*
+*Showcase repository — illustrative screenshots and documentation only; no runnable application or proprietary credentials included.*
